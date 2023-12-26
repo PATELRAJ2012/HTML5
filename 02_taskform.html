@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1 {
+            display: grid;
+            text-align: center;
+         }
+            .container {
+                width: 700px;
+                height: 400px;
+                background-color: aqua;
+            }
+            input {
+                height: 20px;
+                width:   279px;
+                padding: 10px   ;
+
+            }
+            .radio {
+                height: 20px;
+                width: 29px;
+                margin: 18px
+
+            }
+            table {
+                margin: 5px;
+            }
+            .button {
+                width: 600px;
+                height: 50px;
+                background-color: bisque;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>registration</h1>
+        <form action="">
+            <table > 
+                <tr>
+                    <td>
+                        <label for="fullname">full name:</label> <br>
+                    <input type="text" id="fullname" placeholder="Enter your name"> </td>
+                    <td>
+                        <label for="username">username:</label> <br>
+                        <input type="text" id="username" placeholder="Enter your username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </td>
+                    <td>
+                        <label for="number">Phone number:</label> <br>
+                        <input type="number" id="number" placeholder="Enter your number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">password:</label> <br>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </td>
+                    <td>
+                        <label for="password">Confirm password:</label> <br>
+                        <input type="password" id="password" placeholder="confirm your password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="radio" for="gender">Gender</label>
+                        <input class="radio" type="radio" name="gender" id="gender">male
+                        <input class="radio" type="radio" name="gender" id="gender">female
+                        <input class="radio" type="radio" name="gender" id="gender">prefer not to say
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="2">
+                        <input class="button" type="submit" value="register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

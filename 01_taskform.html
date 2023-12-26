@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            justify-content: center;
+            background-color: aqua;
+            width: 625px;
+            border: 4px solid black;
+        }
+        input, textarea ,label {
+            width: 500px;
+            height: 50px;
+            margin: 10px;
+        }
+        .radio {
+            width: 100px;
+            height: 15px;
+        }
+        select {
+            margin: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <form action="">
+          <h1>student ragistratiom form</h1>
+        <label for="firstname">first name:</label><br />
+        <input type="text" id="firstname" pattern="[A-Z]" placeholder="first name"/>
+        <br />
+        <label for="middlename">middlename:</label><br />
+        <input type="text" id="middlename" pattern="[A-Z]" placeholder="middle name" />
+        <br />
+        <label for="lastname">lastname</label><br />
+        <input type="text" id="lastname" pattern="[A-Z]" placeholder="last name"/><br />
+
+        <label for="course">course:</label>
+        <select name="course" id="course">
+          <option value="">course</option>
+          <option value="">c</option>
+          <option value="">c++</option>
+          <option value="">HTML</option>
+          <option value="">css</option>
+        </select>
+        <br />
+        <label for="radio">gender:</label><br />
+        <input class="radio" type="radio" name="gender" id="gender" />male 
+        <input class="radio" type="radio" name="gender" id="gender" />female 
+        <input class="radio" type="radio" name="gender" id="gender" />other 
+        <br />
+        <label for="phone">phone:</label> <br>
+        <input type="text " id="phone" pattern="[0-9]" maxlength="10" placeholder="phone no." required /><br />
+        <input type="number" id="phone" pattern="[0-9]" placeholder="phone no." required/> <br>
+
+        <label for="currentaddress">currentaddress:</label> <br>
+        <textarea name="" id="currentaddress" cols="30" rows="10"></textarea> <br>
+        <label for="Email">Email:</label> <br>
+        <input type="email" placeholder="Enter email" id="Email" name="Email"><br>
+        <label for="password">password</label> <br>
+        <input type="password" id="password" placeholder="Enter password" > <br>
+        <label for="password">re-type password</label><br>
+        <input type="password" id="password" placeholder="re-type password" ><br>
+        <input type="submit" value="register">
+
+        <form action="" align="center">
+         
+          <fieldset>
+              <legend>login form</legend>
+          <!-- <input type="text" pattern="[a-zA-z0-9]+" placeholder="Enter your name" required> <br> -->
+          <input type="text" size="50" pattern="[a-zA-z0-9]{3,6}" placeholder="Enter your name" required> <br>
+          
+          
+          <input type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your number"  required>
+          <br>
+          <input type="password" minlength="3" maxlength="8" required placeholder="Enter your password">
+          <br>
+          quntity<input required placeholder="quntity" min="1" max="7"  type="number">
+              <input type="email"  [a-zA-z0-9]+@+[a-zA-z]+.+[a-zA-z]{2,4} required>
+          <input type="submit">
+
+      </fieldset>
+
+          <!-- shubha4325@gmail.com
+          [a-zA-z0-9]+@+[a-zA-z]+.+[a-zA-z]{2,4} -->
+  
+          
+      </form>
+    </div>
+  </body>
+</html>
